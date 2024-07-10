@@ -27,7 +27,6 @@ const Toggle = ({
   };
 
   useEffect(() => {
-    console.log('animation on');
     Animated.timing(animationXTrans, {
       toValue: isOn ? X_COORD_ON : X_COORD_OFF,
       duration: ANIMATION_DURATION,
