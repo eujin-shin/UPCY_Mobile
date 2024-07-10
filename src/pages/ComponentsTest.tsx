@@ -8,6 +8,7 @@ import TextToggle from '../common/TextToggle';
 import Toggle from '../common/Toggle';
 import ListItem from '../components/Lookbook/ListItem';
 import LookbookList from '../components/Lookbook/LookbookList';
+import ProfileInfo from '../components/Lookbook/ProfileInfo';
 
 const TestDropdown = ({ index }: { index: number }) => {
   const [value, setValue] = useState<string | undefined>(undefined);
@@ -40,6 +41,13 @@ export default function ComponentsTest() {
           <LookbookAddButton onPress={() => {}} />
           <TestToggle />
           <LookbookList />
+          <View
+            style={{
+              width: '100%',
+              flexDirection: 'row',
+            }}>
+            <ProfileInfo name="업씨러01" image={undefined} />
+          </View>
         </View>
       </View>
     </SafeAreaView>
